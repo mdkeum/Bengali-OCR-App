@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangla OCR Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bangla OCR Application</h1>
+        <input type="file" id="file-input" accept="image/*">
+        <button onclick="extractText()">Extract Text</button>
+        <div id="output">
+            <h2>Extracted Text:</h2>
+            <p id="text-output"></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+    <script src="https://docs.opencv.org/3.4/opencv.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
